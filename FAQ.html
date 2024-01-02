@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+      .faq {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      .question {
+        width: 400px;
+        height: 20px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .answer {
+        display: none;
+        width: 400px;
+        height: 80px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .number {
+        height: 40px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: gray;
+        color: white;
+        text-align: center;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq">
+      <div class="question">
+        <span class="number">1</span>Lorem ipsum dolor sit amet?
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum?
+      </div>
+      <div class="question">
+        <span class="number">2</span>Lorem ipsum dolor sit amet?
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum?
+      </div>
+      <div class="question">
+        <span class="number">3</span>Lorem ipsum dolor sit amet?
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum?
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(".question").click(function () {
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
