@@ -7,8 +7,8 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
       .faq {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        width: 420px;
+        margin: auto;
       }
       .question {
         width: 400px;
@@ -16,18 +16,22 @@
         border: 1px solid gray;
         border-radius: 5px;
         padding: 10px;
+        margin-bottom: 5px;
       }
       .answer {
         display: none;
         width: 400px;
         height: 80px;
-        border: 1px solid gray;
+        border-top: 1px dashed gray;
         border-radius: 5px;
         padding: 10px;
+        margin-bottom: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
       .number {
         height: 40px;
-        width: 80px;
+        width: 50px;
         border-radius: 50%;
         background-color: gray;
         color: white;
@@ -40,7 +44,9 @@
   <body>
     <div class="faq">
       <div class="question">
-        <span class="number">1</span>Lorem ipsum dolor sit amet?
+        <span class="number">1</span>Lorem ipsum dolor sit amet?<span
+          class="icon"
+        ></span>
       </div>
       <div class="answer">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum?
