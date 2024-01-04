@@ -44,6 +44,10 @@
         border: none;
         background-color: rgb(233, 228, 228);
       }
+      .title {
+        color: gray;
+        margin-left: 12px;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +57,21 @@
       <button type="submit" class="todoButton">
         <i class="ion-edit" style="color: gray"></i>
       </button>
+      <h4 id="title" class="title"></h3>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(".todoButton").click(function () {
+          let task = $(".task").val();
+          $("#title").text(task);
+          $(".task").val("");
+        });
+      });
+    </script>
   </body>
 </html>
