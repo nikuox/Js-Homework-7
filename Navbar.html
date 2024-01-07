@@ -17,10 +17,6 @@
       #aside {
         width: 300px;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
-        position: fixed;
-        height: 100%;
-        top: 0;
-        left: 0;
       }
 
       #aside .top > img {
@@ -83,14 +79,16 @@
         margin-left: 10px;
       }
 
-      @media screen and (max-width: 980px) {
-        #aside {
-          display: none;
-        }
+      .button {
+        width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
       }
     </style>
   </head>
   <body>
+    <button id="btn" class="button">Navbar</button>
     <aside id="aside">
       <div class="top">
         <img src="assets/img/green.jpg" alt="top image" />
@@ -122,5 +120,17 @@
         <li class="side-nav-item"><i class="ion-ios-telephone"></i>Contact</li>
       </ul>
     </aside>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#btn").click(function () {
+          $("#aside").toggle();
+        });
+      });
+    </script>
   </body>
 </html>
