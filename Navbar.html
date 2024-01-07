@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      #aside {
+        width: 300px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      #aside .top > img {
+        width: 100%;
+        display: block;
+      }
+
+      #aside .top {
+        position: relative;
+      }
+
+      #aside .overlay {
+        position: absolute;
+        top: 0;
+        padding-top: 30px;
+        padding-left: 20px;
+      }
+
+      #aside .avatar > img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+
+      #aside .intro {
+        font-size: 11px;
+        color: white;
+        font-weight: 100;
+        margin-top: 10px;
+      }
+
+      #aside .social {
+        margin-top: 10px;
+      }
+      #aside .social a {
+        color: white;
+        margin-right: 15px;
+      }
+
+      #aside .side-nav {
+        background-color: white;
+        height: 100%;
+      }
+
+      #aside .side-nav li {
+        padding: 15px 20px;
+        list-style-type: none;
+        color: rgba(0, 0, 0, 0.54);
+        cursor: pointer;
+      }
+
+      #aside .side-nav li:hover {
+        background-color: lightgrey;
+      }
+
+      #aside .side-nav li i {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.54);
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+
+      @media screen and (max-width: 980px) {
+        #aside {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside id="aside">
+      <div class="top">
+        <img src="assets/img/green.jpg" alt="top image" />
+        <div class="overlay">
+          <div class="avatar">
+            <img src="assets/img/avatar.jpg" alt="avatar" />
+          </div>
+          <div class="intro">
+            <h1>Nikoo Samadi</h1>
+            <h4>niksamadi1998@gmail.com</h4>
+          </div>
+          <div class="social">
+            <a
+              href="https://www.instagram.com/nikuox/?igshid=MzRlODBiNWFlZA%3D%3D"
+              ><i class="ion-social-instagram-outline"></i
+            ></a>
+            <a href="https://www.pinterest.com/nikuox/"
+              ><i class="ion-social-pinterest-outline"></i
+            ></a>
+            <a href=""><i class="ion-social-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <ul class="side-nav">
+        <li class="side-nav-item"><i class="ion-ios-home"></i>Home</li>
+        <li class="side-nav-item"><i class="ion-android-person"></i>About</li>
+        <li class="side-nav-item"><i class="ion-document-text"></i>Resume</li>
+        <li class="side-nav-item"><i class="ion-gear-a"></i>Services</li>
+        <li class="side-nav-item"><i class="ion-ios-telephone"></i>Contact</li>
+      </ul>
+    </aside>
+  </body>
+</html>
